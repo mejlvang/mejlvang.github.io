@@ -15,6 +15,9 @@
 
 */
 
+var audioGuitar = new Audio('src/sounds/guitar.wav');
+
+
 // This will be our MQTT client
 var client;
 
@@ -57,8 +60,10 @@ $('document').ready(function() {
 	});
 
 	// If we click the send-new-number button, send a number over MQTT
-	$('.send-new-number').click(function() {
+	$
+	('.send-new-number').click(function() {
 		sendRandomNumber();
+	
 	})
 })
 

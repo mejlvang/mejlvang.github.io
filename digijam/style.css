@@ -17,6 +17,7 @@ html, body {
     You can creative with this, and show completely different interfaces for different IDs
 */
 body[data-id="1"] {
+    background: pink;
     background-image: url("src/guitar.png");
     background-repeat: repeat;
 }

@@ -18,8 +18,11 @@ html, body {
 */
 body[data-id="1"] {
     background: pink;
-    background-image: url("src/guitar.png");
+    <div>
+    background-image: url("src/guitar.png"); 
+    opacity: 0.5;
     background-repeat: repeat;
+    </div>
 }
 body[data-id="2"] {
     background: aquamarine;

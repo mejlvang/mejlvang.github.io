@@ -15,7 +15,7 @@
 
 */
 
-var audio1 = new Audio('src/sounds/guitar.wav');
+var audioGuitar = new Audio('src/sounds/guitar.wav');
 
 
 // This will be our MQTT client
@@ -63,7 +63,6 @@ $('document').ready(function() {
 	$
 	('.send-new-number').click(function() {
 		sendRandomNumber();
-		audio1.play();
 	
 	})
 })
@@ -123,19 +122,6 @@ function sendRandomNumber() {
 	};
 	// Show to the interface what number we are sending
 	$('.sending').text('"' + payload.id + ': ' + payload.message + '"');
-	// We send/publish the message to the basic topic
-	client.publish(basicTopic, JSON.stringify(payload));
-}
-
-function sendSound() {
-	// Messages are called payloads in MQTT
-	// We create a payload with our numerical ID, our random unique and a random number
-	var payload = {
-		id : numericId,
-		instrumentSound: id.play();
-	};
-	// Show to the interface what number we are sending
-	$('.sending').text('"' + payload.id + ': ' + payload.instrumentSound + '"');
 	// We send/publish the message to the basic topic
 	client.publish(basicTopic, JSON.stringify(payload));
 }

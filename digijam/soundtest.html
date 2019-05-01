@@ -1,18 +1,19 @@
- <!DOCTYPE HTML>
-  <html>
+ <html>
+
   <head>
-  <title>Audio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
+
   <body>
-
+    <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
+    <a onclick="PlaySound()"> Play</a>
     <script>
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-   </script>
+    function PlaySound() {
+          var sound = document.getElementById("audio");
+          sound.play()
+      }
+    </script>
+  </body>
 
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="src/sounds/guitar.wav" ></audio>
- </body>
- </html>
+</html>

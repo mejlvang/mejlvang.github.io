@@ -48,16 +48,27 @@ var numericId = -1;
 
 $('document').ready(function() {
 	// If we click button-one, set our ID and start the MQTT
-	$('.button-one').click(function() {
+	$('.button-guitar').click(function() {
 		numericId = 1;
 		startMQTT();
 	});
 
 	// If we click button-two, also set our ID and start the MQTT
-	$('.button-two').click(function() {
+	$('.button-base').click(function() {
 		numericId = 2;
 		startMQTT();
 	});
+
+	$('.button-drum').click(function() {
+		numericId = 3;
+		startMQTT();
+	});
+
+	$('.button-gong').click(function() {
+		numericId = 4;
+		startMQTT();
+	});
+
 
 	// If we click the send-new-number button, send a number over MQTT
 	$

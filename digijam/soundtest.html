@@ -5,11 +5,11 @@
   </head>
 
   <body>
-    <audio id="audio" src="src/guitar.wav" autostart="false" ></audio>
-    <a onclick="PlaySound()"> Play</a>
+    <audio id="audio-guitar" src="src/guitar.wav" autostart="false" ></audio>
+    <a onclick="PlaySound()"> Jam away!</a>
     <script>
     function PlaySound() {
-          var sound = document.getElementById("audio");
+          var sound = document.getElementById("audio-guitar");
           sound.play()
       }
     </script>
